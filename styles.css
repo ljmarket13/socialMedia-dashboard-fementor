@@ -77,15 +77,25 @@ span {
     /* grid-auto-rows: 0.2fr; */
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     gap: 20px;
-    margin: 80px 165px;
+    margin: 20px auto;
     max-width: 1200px;
+    padding: 20px;
 }
 
 .header {
-    max-width: 1200px;
-    margin: 80px 165px;
     display: flex;
     justify-content: space-between;
+}
+
+.overview,
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.overview > h2 {
+    font-size: 1.7rem;
 }
 
 .header h1 {
@@ -191,16 +201,6 @@ div.card2 > span {
 div.card2 > img,
 span {
     justify-self: end;
-}
-
-.overview {
-    /* grid-column: 1 / 5; */
-    max-width: 1200px;
-    margin: 20px 165px;
-}
-
-.overview > h2 {
-    font-size: 1.7rem;
 }
 
 .attribution {
